@@ -158,7 +158,7 @@ jobs:
           merge-multiple: true
 
       - name: Delete existing release and tag
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           TAG_NAME: ${{ needs.prepare_release.outputs.version }}
         with:

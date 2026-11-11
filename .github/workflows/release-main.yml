@@ -117,7 +117,7 @@ jobs:
           merge-multiple: true
 
       - name: Delete existing beta release and tag
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           TAG_NAME: ${{ env.TAG_NAME }}
         with:
